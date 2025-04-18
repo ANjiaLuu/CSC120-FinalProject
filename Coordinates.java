@@ -2,15 +2,17 @@ public class Coordinates {
   x: double;
   y: double;
   string name; 
+  string locationDescription;
 
-  public Location(String n, double x, double y) {
+  public Location(String n, double x, double y, String l) {
     this.name = n;
     this.x = x;
     this.y = y;
+    this.locationDescription = l;
   }
   
   public static void main{
-    Location Quad = new Location("Quad", 0, 0);
+    Location Quad = new Location("Quad", 0, 0, "A dorm, where Boba used to live so that’s why something feels off now.”);
     Location Talbot_House = new Location ("Talbot_House", 0, 1);
     Location Lamont_Dining = new Location ("Lamont_Dining", 0, 2);
     Location Seelye_Basement = new Location ("Seelye_Basement", 1, 0);
