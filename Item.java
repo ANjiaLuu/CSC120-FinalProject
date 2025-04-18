@@ -14,7 +14,9 @@ public class Item extends Coordinates {
     this.hasBeenPickedUp = false;
     this.isInsideAnotherItem = i;
   }
-
+/**
+   * Item descriptions have not been written yet.
+   **/
   public static void main {
     Item newspaper = new Item("Newspaper", 1, 1, "", false);
     Item epipen = new Item("EpiPen", 0, 2, "", false);
