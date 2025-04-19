@@ -9,7 +9,7 @@ public class NPC{
     this.dialogue=dialogue;
     this.location=location;
   public void talk(){
-    System.out.println(name+dialogue)
+    System.out.println(name+":"+dialogue);
   }
   public String getName{
     return this.name;
