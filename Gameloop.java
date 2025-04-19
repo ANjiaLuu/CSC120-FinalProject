@@ -13,10 +13,10 @@ public class Gameloop{
 ", Array.asList(shakila_d), Location Seelye_Basement);
   }
   if (player.talk_to(Shakila)){
-      if (player.has_EpiPen){
+      if (player.has_Item(Epipen){
         Shakila.talk()
       }
-      if (player.has_essay){
+      if (player.has_Item(Essay)){
         Shakila.talk()
         shakila_accused_hanyu=true;
       }
