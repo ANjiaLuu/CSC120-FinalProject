@@ -4,6 +4,7 @@ public class Gameloop{
   
   public Gameloop{
     this.shakila_accused_hanyu=false;
+    
   }
   public static void main(String[] args){
     String [] shakila_d={ “Look closely at the EpiPen - it was broken! Someone messed with it so it wouldn’t work properly.”
@@ -20,6 +21,7 @@ public class Gameloop{
         Shakila.talk()
         shakila_accused_hanyu=true;
       }
+      if (player.has_Item(Epipen)&&player.has_Item(Epipen))
 
 }
 
