@@ -8,16 +8,16 @@ public class NPC{
     this.description=description;
     this.dialogue=dialogue;
     this.location=location;
-  public talk(){
+  public void talk(){
     System.out.println(name+dialogue)
   }
   public String getName{
     return this.name;
   }
-  public getLocation{
+  public Location getLocation{
     return this.location;
   }
-  public move(Location newLocation){
+  public void move(Location newLocation){
     this.location=newlocation;
   }
 
