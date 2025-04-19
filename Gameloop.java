@@ -16,7 +16,7 @@ public class Gameloop{
       if (player.has_Item(Epipen){
         Shakila.talk()
       }
-      if (player.has_Item(Essay)){
+      if (player.has_Item(Shakila's_essay)){
         Shakila.talk()
         shakila_accused_hanyu=true;
       }
