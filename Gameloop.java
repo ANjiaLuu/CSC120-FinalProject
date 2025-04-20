@@ -27,7 +27,15 @@ public class Gameloop{
         Hanyu.talk();
       }
  if (player.talk_to(Savannah)){
-        Savannah.talk();
-      }  
+      Savannah.talk();
+      }
+ if (player.talk_to(Anjia)){
+     if ! player.has_Item(photo){
+       Anjia.talk();
+     }else{
+       Anjia.talk();   
+     }
+    
+ }
 }
 
