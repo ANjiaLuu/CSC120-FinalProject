@@ -35,7 +35,9 @@ public class Gameloop{
      }else{
        Anjia.talk();   
      }
-    
+ }
+ public void run(){
+   
  }
 }
 
