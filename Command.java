@@ -8,6 +8,9 @@ public class Command{
     this.map=map;
   }
   public String interpret(String input){
+    if (input==null){
+      return "You need to enter a command.";
+    }
     
   }
 }
