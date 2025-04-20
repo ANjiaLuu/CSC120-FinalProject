@@ -9,7 +9,6 @@ public class Item extends Coordinates {
   boolean isInsideAnotherItem;
   Collection<String> collectionOfItems = new ArrayList<String>();
 
-  public 
   public Item(String n, double x, double y, String d, boolean i){
     this.name = n;
     this.x = x;
