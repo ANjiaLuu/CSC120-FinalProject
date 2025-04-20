@@ -3,6 +3,7 @@ public class NPC{
   protected String description;
   protected String dialogue;
   protected Coordinates coordinates;
+  protected int dialogueIndex=0;
   public NPC(String name,String description,String dialogue,Coordinates coordinates){
     this.name=name;
     this.description=description;
@@ -11,7 +12,9 @@ public class NPC{
   }
 	
   public void talk(){
-    System.out.println(name+":"+dialogue);
+    if (dialogueIndex<dialogue.size()){
+    	System.out.println(name+":"+dialogue.get(dialogueIndex));
+	dialogueIndex+=1;}
   }
 	
   public String getName(){
