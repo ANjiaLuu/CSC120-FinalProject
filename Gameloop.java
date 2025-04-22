@@ -1,9 +1,11 @@
 import java.util.Scanner;
 public class Gameloop{
   Boolean shakila_accused_hanyu;
-  
+  Boolean still_playing;
   public Gameloop{
     shakila_accused_hanyu=false; 
+    still_playing=true;
+    
   }
   if (player.talk_to(Shakila)){
       if (player.has_Item(Epipen){
