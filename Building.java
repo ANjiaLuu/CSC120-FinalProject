@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class Building {
+public class Building extends Item {
     
     public String name;
     public ArrayList<Item> evidence;
