@@ -17,31 +17,6 @@ public class Item extends Coordinates {
     this.hasBeenPickedUp = false;
     this.isInsideAnotherItem = i;
   }
-
-  public showDescription(String[] args){
-    Scanner scansForItem = new Scanner(System.in);
-    String userInput = scansForItem.nextLine();
-    switch(userInput contains "inspect") && (userInput contains ListOfItems){
-      case NEWSPAPER:
-        System.out.println(newspaper.itemDescription);
-        break;
-      case EPIPEN:
-        System.out.println(epipen.itemDescription);
-        break;
-      case ESSAY:
-        System.out.println(essay.itemDescription);
-        break;
-      case BACKPACK:
-        System.out.println(backpack.itemDescription);
-        break;
-      case PHOTO:
-        System.out.println(photo.itemDescription);
-        break;
-      case CAKE:
-        System.out.println(cake.itemDescription);
-        break;
-    }
-  }
 /**
    * Item descriptions have not been written yet.
    **/
