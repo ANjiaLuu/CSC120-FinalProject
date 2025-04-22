@@ -2,7 +2,6 @@ import java.util.Scanner;
 public class Command extends Item {
   private Player player
   private Map map;
-  boolean gameIsRunning = true;
 
   public Command(){
     this.player=player;
