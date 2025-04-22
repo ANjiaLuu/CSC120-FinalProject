@@ -9,6 +9,23 @@ public class Item extends Coordinates {
   boolean isInsideAnotherItem;
   Collection<String> collectionOfItems = new ArrayList<String>();
 
+  public enum ListOfItems {
+      NEWSPAPER("Newspaper"),
+      EPIPEN("Epipen"),
+      ESSAY("Essay"),
+      BACKPACK("Backpack"),
+      PHOTO("Photo"),
+      CAKE("Cake");
+
+      private String displayName;
+
+      ListOfItems(String displayName) {
+        this.displayName = displayName;
+      }
+      public String displayName() {
+        return displayName; 
+      }
+    
   public Item(String n, double x, double y, String d, boolean i){
     this.name = n;
     this.x = x;
@@ -27,13 +44,7 @@ public class Item extends Coordinates {
     Item backpack = new Item("Boba's Backpack", 1, 2, "", false);
     Item photo = new Item("Photo", 1, 2, "", true);
     Item cake = new Item("Cake", 0, 1, "", false);
-    enum ListOfItems {
-      NEWSPAPER,
-      EPIPEN,
-      ESSAY,
-      BACKPACK,
-      PHOTO,
-      CAKE
+
     }
   }
 }
