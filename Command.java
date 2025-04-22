@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Command extends Item {
+public class Command extends Building {
   private Player player
   private Map map;
 
@@ -32,6 +32,36 @@ public class Command extends Item {
         case CAKE:
           System.out.println(cake.itemDescription);
           break;
+  }
+    switch(input contains "inspect") && (input contains ListOfBuildings){
+      case QUAD:
+        System.out.println(quad.description);
+        break;
+      case TALBOT_HOUSE:
+        System.out.println(talbotHouse.description);
+        break;
+      case LAMONT_DINING:
+        System.out.println(lamontDining.description);
+        break;
+      case SEELYE_BASEMENT:
+        System.out.println(seelyeBasement.description);
+        break;
+      case CAMPUS_CENTER:
+        System.out.println(campusCenter.description);
+        break;
+      case COLLEGE_HALL:
+        System.out.println(collegeHall.description);
+        break;
+      case OUTDOOR_TRACK:
+        System.out.println(outdoorTrack.description);
+        break;
+      case CHEMISTRY_LAB:
+        System.out.println(chemistryLab.description);
+        break;
+      case CERAMICS_BUILDING:
+        System.out.println(ceramicsBuilding.description);
+        break;
+  }
 }
 
 
