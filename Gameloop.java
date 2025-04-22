@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class Gameloop{
   boolean shakila_accused_hanyu;
-  boolean still_playing;
   public Gameloop{
     shakila_accused_hanyu=false; 
     still_playing=true;
