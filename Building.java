@@ -12,6 +12,26 @@ public class Building {
         this.location =  location;
     }
 
+    public enum ListOfBuildings {
+        QUAD("Quad"),
+        TALBOT_HOUSE ("Talbot House"),
+        LAMONT_DINING("Lamont Dining Hall"),
+        SEELYE_BASEMENT("Seelye Basement"),
+        CAMPUS_CENTER("Campus Center"),
+        COLLEGE_HALL("College Hall"),
+        OUTDOOR_TRACK("Outdoor Track"),
+        CHEMISTRY_LAB ("Chemistry Lab"),
+        CERAMICS_BUILDING("Ceramics Building")
+    }
+      private String displayName;
+
+      ListOfBuildings(String displayName) {
+        this.displayName = displayName;
+      }
+      public String displayName() {
+        return displayName; 
+      }
+    
     public String getName() {
         return this.name;
     }
