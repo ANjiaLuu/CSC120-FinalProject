@@ -62,6 +62,12 @@ public class Command extends Building {
         System.out.println(ceramicsBuilding.description);
         break;
   }
+/*
+ * accuse <NPC> still needs to be added to the code, as well as what this command does.
+ * go north/south/east/west still needs to be added to the code.
+ * talk to <NPC>, pick up <Item> and put down <Item> are all in Player.java. This means that Command.java should extend Player.java
+ */
+
 }
 
 
