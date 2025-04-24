@@ -7,14 +7,14 @@ public class Gameloop{
     
   }
   if (player.talk_to(Shakila)){
-      if (player.has_Item(Epipen){
+      if (player.has_Item(epipen){
         Shakila.talk();
       }
-      if (player.has_Item(Shakila's essay)){
+      if (player.has_Item(essay)){
         Shakila.talk();
         shakila_accused_hanyu=true;
       }
-      if (player.has_Item(Epipen)&&player.has_Item(Cake)&& player.has_Item(Photo)){
+      if (player.has_Item(epipen)&&player.has_Item(cake)&& player.has_Item(photo)){
         Shakila.talk();
       }
  
