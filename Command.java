@@ -33,6 +33,8 @@ public class Command extends Building {
           System.out.println(cake.itemDescription);
           break;
   }
+  // Change this switch statement so the Player can only inspect the building they are currently in. 
+  // That means check the current coordinates of the player, and if they match the coordinates of the building then allow the description to be printed out.
     switch(input contains "inspect") && (input contains ListOfBuildings){
       case QUAD:
         System.out.println(quad.description);
