@@ -5,20 +5,20 @@ import java.util.Map;
  * keeps track of the player's name, location, and stuff they carry (inventory)
  * is a Coordinates object (inherits x, y, name, and description)
  */
- public class Player extends Coordinates{
+ public class Player{
 
-    private String PlayerName;  //player's name
-    private ArrayList<Item>iventory; //items player has picked up
-
+    private String playerName;  //player's name
+    private ArrayList<Item>inventory; //items player has picked up
+    private Coordinates location;
 
 
     /*
      * Constructor – player with a name and starting location
      */
-        public Player (String PlayerName, double x, double y, String locName, String locDes) {
-            super(x,y, locName, locDes);
-            this.PlayerName = playerName;
+        public Player (String playerName, double x, double y) {
+            this.playerName = playerName;
             this.inventory = new ArrayList<>(); //empty bag at the begginning, No items
+            this.location = new Coordinates(x,y);
 
 
         }
@@ -30,27 +30,27 @@ import java.util.Map;
 
         //where the player is currently
         public Coordinates getLocation(){
-            return new Coordinates(getX(), getY(), getName(), getDescription());
+            return location;
 
         }
 
         //what the player have (what objects)
         public void showInventory(){
-            if(inventory.idEmpty()){
+            if(inventory.isEmpty()){
                 System.out.println("You don't have anything yet");
             } else {
-                System.out.println("You have:");
+                System.out.println("You have: ");
                 for(Item item : inventory){
-                    System.out.println(" " + item.getName()); //just show item names
+                    System.out.println(" " + item.displayName()); //just show item names
                 }
             }
         }
 
-        //Shows the map's description ( the map should have a getDescription method)
-        public void showMap(Map map){
-            System.out.println(map.getDescription());
+        // //Shows the map's description ( the map should have a getDescription method)
+        // public void showMap(Map map){
+        //     System.out.println(item.itemDescription());
 
-        }
+        // }
 
         //picks up an item if it hasn't already been picked up
         public void pickUp(Item item){
@@ -66,26 +66,64 @@ import java.util.Map;
         
         //remove an item from invwntory
         public void putdown(Item item){
-            if (inventory.contain(item)){
-                inventory,remove(item);
-                System.out.println("You put down:" + item.getName());
+            if (inventory.contains(item)){
+                inventory.remove(item);
+                System.out.println("You put down: " + item.getName());
             } else{
                 System.out.println("You don't even have that item!");
             }
         } 
-        public void inspect(Item item){
-            System.out.println(item.showDescription());
-        } 
+        public void inspect(String itemName){
+            System.out.println(item.itemDescription());
 
-        //talk to the person if they are in the same plave
-        public void talkTo(NCP ncp){
-            if (ncp.getLocatoin().equals(this.getLocation())){
-                ncp.talk(); //the NCP speaks
+            // inspect an item 
+            if (lowerInput.contains("inspect")) {
+                for (Item item : items) {
+                    if (lowerInput.contains(item.getName().toLowerCase())) {
+                        inspect(item);
+                        return "Inspected " + item.getName();
+                    }
+                }
+            }
+    
+        } 
+        public void inspect(Building bulding){
+            System.out.println(building.getDescription());
+        }
+
+        // Inspect a building
+        if (lowerInput.contains("inspect")) {
+            for (Building building : buildings) {
+                if (lowerInput.contains(building.getName().toLowerCase())) {
+                    inspect(building);
+                    return "Inspected " + building.getName();
+                }
+            }
+         
+       }
+        // public String interpret(String input, Building[] building, Item[] items){
+        //     if (input == null || input.trim().isEmpty()) {
+        //         return "You need to enter a command.";
+        //     }
+        
+        
+        
+        // 
+        
+       if (lowerInput.contains("talk")) {
+        return "Talking to someone...";
+        }
+
+        //talk to the person if they are in  the same plave
+        public void talkTo(NPC npc){
+            if (npc.getLocation().equals(this.getLocation())){
+                npc.talk(); //the NPC speaks
             } else{
-                System.out.println(ncp.getName()+ "isn't here right now");
+                System.out.println(npc.getName()+ "isn't here right now");
             }
         }
 
         }
+
 
 
