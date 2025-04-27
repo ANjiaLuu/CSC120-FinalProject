@@ -4,7 +4,6 @@ public class Item extends Coordinates {
   String name;
   x: double;
   y: double;
-  String itemDescription;
   boolean hasBeenPickedUp;
   boolean isInsideAnotherItem;
   ArrayList<Item> listOfItems = new ArrayList<Item>();
