@@ -1,17 +1,18 @@
 import java.util.ArrayList;
-public class Building extends Item {
+public class Building {
     
     public String name;
-    public ArrayList<Item> evidence;
     public String description;
     public Coordinates location;
+    ArrayList<Buildings> buildings = new ArrayList<Buildings>();
 
     public Building(String name, String description, Coordinates location) {
         this.name = name;
-        this.description =  description;
-        this.location =  location;
+        this.description = description;
+        this.location = location;
     }
 
+    /** 
     public enum ListOfBuildings {
         QUAD("Quad"),
         TALBOT_HOUSE ("Talbot House"),
@@ -31,6 +32,7 @@ public class Building extends Item {
       public String displayName() {
         return displayName; 
       }
+    */
     
     public String getName() {
         return this.name;
@@ -48,30 +50,47 @@ public class Building extends Item {
     Building quad = new Building("Quad", 
         "Home to many dorms on Smith College.", 
         new Coordinates(0, 0));
+    buildings.add(quad);
+
     Building talbotHouse = new Building("Talbot House", 
         "A dorm, where Boba used to live, so that’s why something feels off now.", 
         new Coordinates(0, 1));
+    buildings.add(talbotHouse);
+
     Building lamontDining = new Building("Lamont Dining Hall", 
         "Lamont Dining Hall. An Allergy-free dining hall, Savannah works here and maybe she knows something?!",
         new Coordinates(0, 2));
+    buildings.add(lamontDining);
+
     Building seelyeBasement = new Building("Seelye Basement", 
         "Workplace for Student technology consultant, where Shakila works so she has access to onecards as a worker. The one card has access to any building on campus.",
         new Coordinates(1, 0));
+    buildings.add(seelyeBasement);
+
     Building campusCenter = new Building("Campus Center", 
         "A common place for studying and meeting with friends. Also there is a cafe.", 
         new Coordinates(1, 1));
+    buildings.add(campusCenter);
+
     Building collegeHall =  new Building("College Hall",
         "Home to the offices for Class Deans as well as the Student Financial Aid office.",
         new Coordinates(1, 2));
+    buildings.add(collegeHall);
+
     Building outdoorTrack = new Building("Outdoor Track", 
         "Anjia and Boba used to meet here several times a week because running club practices here.",
         new Coordinates(2, 0));
+    buildings.add(outdoorTrack);
+
     Building chemistryLab = new Building("Chemistry Lab", 
         "Hanyu does her experiments there, but maybe she knows something about the poison that killed Boba...",
         new Coordinates(2, 1));
+    buildings.add(chemistryLab);
+
     Building ceramicsBuilding = new Building("Ceramics Building", 
         "Ceramics Club meets in this lovely location to make pottery together.",
         new Coordinates(2, 2));
+    buildings.add(ceramicsBuilding);
     
 }
 
