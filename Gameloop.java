@@ -90,7 +90,7 @@ public class Gameloop {
     String [] savannah_d={ 
       "Look at the newspaper! There’s a photo of me in Ceramics Club during the night of the murder. I have to be innocent!"
     };
-    NPC Savannah= new NPC("Savanah","Works in Lamont Dining Hall, just like the victim. Didn’t like how lazy they were in the dining hall. Had a chance to poison the student with peanuts!",new ArrayList<>(Arrays.asList(savannah_d)),new Coordinates(0, 2));
+    NPC Savannah= new NPC("Savannah","Works in Lamont Dining Hall, just like the victim. Didn’t like how lazy they were in the dining hall. Had a chance to poison the student with peanuts!",new ArrayList<>(Arrays.asList(savannah_d)),new Coordinates(0, 2));
 
 
     String [] anjia_d={
@@ -102,10 +102,10 @@ public class Gameloop {
 
     public void run(){
       Scanner scanner = new Scanner(System.in);
-      System.out.println(".");
+      System.out.println("Hello, Detective! You have been commissioned by the Chief of Northampton Police Station to investigate a murder case at Smith College. Your initial coordinates are (1, 1), Campus Center. Please check the cheatsheet if you are confused about your location or your commands.");
 
       while (true) {
-        System.out.print("You: ");
+        System.out.print(">>> ");
         String input = scanner.nextLine().trim();
         if (input.equalsIgnoreCase("show inventory")) {
           player.showInventory();
@@ -118,7 +118,6 @@ public class Gameloop {
             System.out.println(player.playerLocation);
         } else if (input.startsWith("inspect ")) {
             String playerInspect = input.substring(8);
-            System.out.println(playerInspect);
             player.inspect(playerInspect, buildings);
         } else if (input.startsWith("pick up ")) {
             String itemName = input.substring(8);
