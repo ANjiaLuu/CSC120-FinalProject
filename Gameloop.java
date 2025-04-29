@@ -77,7 +77,7 @@ public class Gameloop {
      "I forgot to say this earlier, but I lent Anjia my OneCard earlier, and she could access all sorts of buildings with it…"
     };
     NPC Shakila= new NPC("Shakila","Works in Seelye basement, and has access to every door on campus with Seelye OneCard. Victim copied Shakila’s homework and accusations of plagiarism nearly got her to the honor board.", 
-    new ArrayList<>(Arrays.asList(shakila_d)), new Coordinates(0, 0));
+    new ArrayList<>(Arrays.asList(shakila_d)), new Coordinates(1, 0));
 
     
     String [] hanyu_d={
