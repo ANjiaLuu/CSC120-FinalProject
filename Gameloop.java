@@ -150,9 +150,9 @@ public class Gameloop {
                       System.out.println(Hanyu.dialogue.get(2));
                   }
               }
-          } else if (playerTalkTo.equalsIgnoreCase(Savannah.name)) {
+          } else if (playerTalkTo.equalsIgnoreCase(Savannah.name)&& player.playerLocation.equals(Savannah.location)) {
               System.out.println(Savannah.dialogue.get(0));
-          } else if (playerTalkTo.equalsIgnoreCase(Anjia.name)) {
+          } else if (playerTalkTo.equalsIgnoreCase(Anjia.name)&& player.playerLocation.equals(Anjia.location)) {
               if (player.getInventory().contains(items.get(3))) {
                 System.out.println(Anjia.dialogue.get(1));
               } else {
