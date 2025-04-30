@@ -1,10 +1,8 @@
 This file will contain documentation for all commands available in your game.
 
-Note:  It's a good idea to also make this list available inside the game, in response to a `HELP` command.
-
 
  go(south, north,east,west)
- talk to(Shakila, Anjia, Savannah,Hanyu)
+ talk to(Shakila, Anjia, Savannah, Hanyu)
  pick up 
  put down
  inspect(building and item)
@@ -28,6 +26,10 @@ Photo
 Cake 
 Shakila's Essay
 
-# SPOILER ALERT
+# End of the game
+After you collected all the items, type down "the murderer is....(name of one of the four suspects)." If you find the true cirminal,
+a congratulations message will pop up.
 
-If your game includes challenges that must be overcome to win, also list them below.
+# SPOILER ALERT
+We highly recommend you go to Chemistry Lab to talk to Hanyu first.
+
