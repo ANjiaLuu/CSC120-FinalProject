@@ -1,38 +1,15 @@
 import java.util.ArrayList;
 public class NPC{
-  protected String name;
-  protected String description;
-  protected ArrayList<String> dialogue;
-  protected Building building;
-  protected Coordinates coordinates;
-  protected int dialogueIndex=0;
+  public String name;
+  public String description;
+  public ArrayList<String> dialogue;
+  public Coordinates location;
   
-  public NPC(String name,String description,ArrayList<String> dialogue,Building building){
+  public NPC(String name,String description,ArrayList<String> dialogue, Coordinates location){
     this.name=name;
     this.description=description;
     this.dialogue=dialogue;
-    this. building= building;
-  }
-	
-  public void talk(){
-    if (dialogueIndex<dialogue.size()){
-      System.out.println(name+":"+dialogue.get(dialogueIndex));
-	dialogueIndex+=1;}
-  }
-	
-  public String getName(){
-    return this.name;
-  }
-	
-  public Coordinates getCoordinates(){
-    return this.coordinates;
-  }
-	
-  public void move(Building newBuilding){
-    this.building=newBuilding;
+    this.location= location;
   }
 
-  public String getDescription(){
-    return this.description;
-  }}
-    
+  }
