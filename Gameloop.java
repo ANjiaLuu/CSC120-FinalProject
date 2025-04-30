@@ -163,6 +163,9 @@ public class Gameloop {
         } else {
             System.out.println("I don't understand that command.");
         }
+          if (input.equalsIgnoreCase("The murderer is Anjia.") && player.getInventory().containsAll(items)) {
+          System.out.println("Anjia was taken to the police station for questioning. Faced with your reasoning and sufficient evidence, she confessed to the crime. Congratulations, case solved!");
+        } 
     }
 
     scanner.close();
