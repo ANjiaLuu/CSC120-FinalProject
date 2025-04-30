@@ -94,7 +94,8 @@ public class Gameloop {
 
 
     String [] anjia_d={
-      "There is no way I will kill Boba! I always run with her and she is awesome!"
+      "There is no way I will kill Boba! I always run with her and she is awesome!
+        Now it seems like every suspect doesn't admit they are related to Boba's death. Do you wanna go to College Hall where Baba last was. "
     ,"We weren’t really friends when Boba passed away, but that doesn’t mean I killed her. She died from a peanut poisoning, right? I had no way of poisoning her."
     };
     NPC Anjia=new NPC("Anjia","Was on the running club just like the victim. Jealous of her mile time.",new ArrayList<>(Arrays.asList(anjia_d)), new Coordinates(2, 0));
