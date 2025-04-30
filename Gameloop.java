@@ -58,7 +58,7 @@ public class Gameloop {
     Item epipen = new Item("EpiPen", new Coordinates(0, 2), "A medication used to treat allergic reactions. It seems like Boba used this sometime ago.", false);
     Item essay = new Item("Shakila's Essay", new Coordinates(2, 2), "A five-page essay. The very top of it says 'Shakila, this is the same paper that Boba give me! See me after class.'", false);
     //Item backpack = new Item("Boba's Backpack", new Coordinates(1, 2), "There's a photo inside the front pocket of the backpack! You should be able to pick up this photo. Apart from that, the backpack appears to be empty.", false);
-    Item photo = new Item("Photo", new Coordinates(1, 2), "A nice Polaroid picture of Boba, Shakila, Anjia, Savannah, and Hanyu. But it seems like Anjia's face has been written over with black marker.", true);
+    Item photo = new Item("Photo", new Coordinates(1, 2), "A nice Polaroid picture of Boba, Shakila, Anjia, Savannah, and Hanyu. But it seems like Anjia's face has been written over with black marker.", false);
     Item cake = new Item("Cake", new Coordinates(0, 1), "A slice of vanilla cake on a paper plate. It doesn't seem like there are allergens in here, but you'd have to check...maybe go to the chemistry lab?", false);
 
     // add the items into the list
