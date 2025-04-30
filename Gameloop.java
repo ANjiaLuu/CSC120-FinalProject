@@ -18,7 +18,7 @@ public class Gameloop {
         "Home to many dorms on Smith College.", 
         new Coordinates(0, 0));
     Building talbotHouse = new Building("Talbot House", 
-        "A dorm, where Boba used to live, so that’s why something feels off now.Hanyu is standing in the aisle. Hanyu lives in Talbot House, just like the victim! Maybe Hanyu wanted her room next year.Did the person die from regular poisoning? Did one of the suspects intentionally poison them with peanuts Do you wanna talk to Hanyu to find out?", 
+        "A dorm, where Boba used to live, so that’s why something feels off now.Hanyu is standing in the aisle. Hanyu lives in Talbot House, just like the victim! Maybe Hanyu wanted her room next year.Did the person die from regular poisoning? Did one of the suspects intentionally poison them with peanuts Do you wanna talk to Hanyu to find out? And look! there is a cake at the corner of the sofa.", 
         new Coordinates(0, 1));
     Building campusCenter = new Building("Campus Center", 
         "A common place for studying and meeting with friends. Also there is a cafe.There is a newspaper on the table in the cafe.", 
@@ -88,7 +88,7 @@ public class Gameloop {
 
   
     String [] savannah_d={ 
-      "Look at the newspaper! There’s a photo of me in Ceramics Club during the night of the murder. I have to be innocent!"
+      "Look at the newspaper! There’s a photo of me in Ceramics Club during the night of the murder. I have to be innocent!If you don't believe me, you can go to ceramics buidling."
     };
     NPC Savannah= new NPC("Savannah","Works in Lamont Dining Hall, just like the victim. Didn’t like how lazy they were in the dining hall. Had a chance to poison the student with peanuts!",new ArrayList<>(Arrays.asList(savannah_d)),new Coordinates(0, 2));
 
