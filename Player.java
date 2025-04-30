@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Map;
+import java.util.List;
 
 /*
  * keeps track of the player's name, location, and stuff they carry (inventory)
@@ -7,32 +7,36 @@ import java.util.Map;
  */
  public class Player{
 
-    private String playerName;  //player's name
-    private ArrayList<Item>inventory; //items player has picked up
-    private Coordinates location;
+    private List<Item> inventory; //items player has picked up
+    public Coordinates playerLocation;
 
 
     /*
      * Constructor – player with a name and starting location
      */
-        public Player (String playerName, double x, double y) {
-            this.playerName = playerName;
-            this.inventory = new ArrayList<>(); //empty bag at the begginning, No items
-            this.location = new Coordinates(x,y);
+        public Player() {
+            playerLocation = new Coordinates(1, 1); // initially player is at Campus Center
+            inventory = new ArrayList<>();
+        }
+        public List<Item> getInventory() {
+            return inventory;
+        }
 
-
+        public Coordinates move(String direction) {
+            if (direction.equalsIgnoreCase("east")) {
+                playerLocation.x += 1;
+            } else if (direction.equalsIgnoreCase("west")) {
+                playerLocation.x -= 1;
+            } else if (direction.equalsIgnoreCase("north")) {
+                playerLocation.y += 1;
+            } else if (direction.equalsIgnoreCase("south")) {
+                playerLocation.y -= 1;
+            } else {
+                System.out.println("Direction unavailable");
+            }
+            return playerLocation;
         }
         
-        public String getName(){
-            return playerName;
-        }
-
-
-        //where the player is currently
-        public Coordinates getLocation(){
-            return location;
-
-        }
 
         //what the player have (what objects)
         public void showInventory(){
@@ -41,89 +45,59 @@ import java.util.Map;
             } else {
                 System.out.println("You have: ");
                 for(Item item : inventory){
-                    System.out.println(" " + item.displayName()); //just show item names
+                    System.out.println(item.itemName); //just show item names
                 }
             }
         }
-
-        // //Shows the map's description ( the map should have a getDescription method)
-        // public void showMap(Map map){
-        //     System.out.println(item.itemDescription());
-
-        // }
 
         //picks up an item if it hasn't already been picked up
-        public void pickUp(Item item){
-            if (!item.hasItem()){
-                inventory.add(item); //add it to the bag
-                item.addItem();  // mark the item as picked up!
-                System.out.println("You picked up: " + item.getName());
-            } else {
-                System.out.println("You've already picked this up.");
-
+        public void pickUp(String playerPickedItem, List<Item> items){
+            boolean beenFound = false;
+            for (Item item : items) {
+                if (playerPickedItem.equals(item.itemName) && !inventory.contains(item) && (item.hasBeenPickedUp == false)) {
+                    inventory.add(item); //add it to the bag
+                    item.hasBeenPickedUp = true;  // mark the item as picked up!
+                    beenFound = true;
+                    System.out.println("You picked up: " + item.itemName);
+                    break;
+                } }
+            if (!beenFound) {
+                    System.out.println("Action unsuccessful.");
+                }
             }
-        }  
+        
+        
         
         //remove an item from invwntory
-        public void putdown(Item item){
-            if (inventory.contains(item)){
-                inventory.remove(item);
-                System.out.println("You put down: " + item.getName());
-            } else{
-                System.out.println("You don't even have that item!");
+        public void putDown(String playerPutDownItem){
+            for (Item item : inventory) {
+                if (playerPutDownItem.equalsIgnoreCase(item.itemName)){
+                    inventory.remove(item);
+                    item.hasBeenPickedUp = false;
+                    System.out.println("You put down: " + item.itemName);
+                } 
+                System.out.println("You don't even have that item!");}
             }
-        } 
-        public void inspect(String itemName){
-            System.out.println(item.itemDescription());
-
-            // inspect an item 
-            if (lowerInput.contains("inspect")) {
-                for (Item item : items) {
-                    if (lowerInput.contains(item.getName().toLowerCase())) {
-                        inspect(item);
-                        return "Inspected " + item.getName();
-                    }
-                }
+        
+        
+        public void inspect(String playerInspect, List<Building> buildings) {
+            //System.out.println(inventory);
+        //Check items in inventory
+        for (Item item : inventory) {
+            if (item.itemName.equalsIgnoreCase(playerInspect)) {
+                System.out.println(item.itemDescription);
             }
-    
-        } 
-        public void inspect(Building bulding){
-            System.out.println(building.getDescription());
+            System.out.println("Please pick up the item before inspecting it.");
         }
 
-        // Inspect a building
-        if (lowerInput.contains("inspect")) {
-            for (Building building : buildings) {
-                if (lowerInput.contains(building.getName().toLowerCase())) {
-                    inspect(building);
-                    return "Inspected " + building.getName();
-                }
-            }
-         
-       }
-        // public String interpret(String input, Building[] building, Item[] items){
-        //     if (input == null || input.trim().isEmpty()) {
-        //         return "You need to enter a command.";
-        //     }
-        
-        
-        
-        // 
-        
-       if (lowerInput.contains("talk")) {
-        return "Talking to someone...";
-        }
-
-        //talk to the person if they are in  the same plave
-        public void talkTo(NPC npc){
-            if (npc.getLocation().equals(this.getLocation())){
-                npc.talk(); //the NPC speaks
-            } else{
-                System.out.println(npc.getName()+ "isn't here right now");
+        // Check buildings
+        for (Building building : buildings) {
+            if (playerLocation.equals(building.location) && playerInspect.equalsIgnoreCase(building.name)) {
+                System.out.println(building.description);
             }
         }
 
         }
-
+        }
 
 
