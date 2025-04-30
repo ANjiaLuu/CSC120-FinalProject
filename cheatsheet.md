@@ -9,6 +9,7 @@ Note:  It's a good idea to also make this list available inside the game, in res
  put down
  inspect(building and item)
  exit
+ show inventory
 
 (0,0) - The Quad
 (0,1) - Talbot House
