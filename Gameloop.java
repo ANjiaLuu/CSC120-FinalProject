@@ -21,7 +21,7 @@ public class Gameloop {
         "A dorm, where Boba used to live, so that’s why something feels off now.Hanyu is standing in the aisle. Hanyu lives in Talbot House, just like the victim! Maybe Hanyu wanted her room next year.Did the person die from regular poisoning? Did one of the suspects intentionally poison them with peanuts Do you wanna talk to Hanyu to find out?", 
         new Coordinates(0, 1));
     Building campusCenter = new Building("Campus Center", 
-        "A common place for studying and meeting with friends. Also there is a cafe.", 
+        "A common place for studying and meeting with friends. Also there is a cafe.There is a newspaper on the table in the cafe.", 
         new Coordinates(1, 1));
     Building collegeHall =  new Building("College Hall",
         "Home to the offices for Class Deans as well as the Student Financial Aid office.",
@@ -30,16 +30,16 @@ public class Gameloop {
         "Hanyu does her experiments there, but maybe she knows something about the poison that killed Boba...",
         new Coordinates(2, 1));
     Building lamontDining = new Building("Lamont Dining Hall", 
-        "Lamont Dining Hall. An Allergy-free dining hall, Savannah works here and maybe she knows something?!",
+        "Lamont Dining Hall. An Allergy-free dining hall. Savannah works in Lamont Dining Hall, just like the victim. Didn’t like how lazy they were in the dining hall. Had a chance to poison the student with peanuts! Do you wanna talk to her?",
         new Coordinates(0, 2));
     Building seelyeBasement = new Building("Seelye Basement", 
-        "Workplace for Student technology consultant, where Shakila works so she has access to onecards as a worker. The one card has access to any building on campus.",
+        "Workplace for Student technology consultant, where Shakila works so she has access to onecards as a worker. The one card has access to any building on campus.Victim copied Shakila’s homework and accusations of plagiarism nearly got her to the honor board. Do you wanna talk to her?",
         new Coordinates(1, 0));
     Building outdoorTrack = new Building("Outdoor Track", 
-        "Anjia and Boba used to meet here several times a week because running club practices here.",
+        "Anjia and Boba used to meet here several times a week because running club practices here. Anjia was on the running club just like the victim. Jealous of her mile time. Do you wanna talk to her?",
         new Coordinates(2, 0));
     Building ceramicsBuilding = new Building("Ceramics Building", 
-        "Ceramics Club meets in this lovely location to make pottery together.",
+        "Ceramics Club meets in this lovely location to make pottery together.There is an essay lying on the ground with Shakila’s name on it.",
         new Coordinates(2, 2));
 
     // add the buildings into the list
