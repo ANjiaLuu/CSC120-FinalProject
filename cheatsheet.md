@@ -1,4 +1,4 @@
-# Basic commands
+# Basic commands and info
  go(south, north,east,west)  
  talk to(Shakila, Anjia, Savannah, Hanyu)  
  pick up  
