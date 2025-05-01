@@ -24,7 +24,7 @@ Photo
 Cake   
 Shakila's Essay  
 
-## Warning: the names of item and non-player characters are case-SENSITIVE.
+## Warning: the names of non-player characters are case-SENSITIVE.
 
 # End of the game
 After you collected all the items, type down "the murderer is....(name of one of the four suspects)." If you find the true cirminal,
