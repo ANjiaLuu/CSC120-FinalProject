@@ -13,7 +13,7 @@
 (1,0) - Seelye Basement  
 (1,1) - Campus Center  
 (1,2) - College Hall  
-(2,0) - Outdoor track  
+(2,0) - Outdoor Track  
 (2,1) - Chemistry Lab  
 (2,2) - Ceramics Building  
 <br>
@@ -24,7 +24,7 @@ Photo
 Cake   
 Shakila's Essay  
 
-## Warning: the names of building, item and non-player characters are case-SENSITIVE.
+## Warning: the names of item and non-player characters are case-SENSITIVE.
 
 # End of the game
 After you collected all the items, type down "the murderer is....(name of one of the four suspects)." If you find the true cirminal,
