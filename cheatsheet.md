@@ -1,6 +1,6 @@
 # Basic commands
- go(south, north,east,west)
- talk to(Shakila, Anjia, Savannah, Hanyu)
+ go(south, north,east,west)  
+ talk to(Shakila, Anjia, Savannah, Hanyu)  
  pick up 
  put down
  inspect(building and item)
