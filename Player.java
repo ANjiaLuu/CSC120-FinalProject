@@ -54,7 +54,7 @@ import java.util.List;
         public void pickUp(String playerPickedItem, List<Item> items){
             boolean beenFound = false;
             for (Item item : items) {
-                if (playerPickedItem.equals(item.itemName) && !inventory.contains(item) && (item.hasBeenPickedUp == false)) {
+                if (playerPickedItem.equalsIgnoreCase(item.itemName) && !inventory.contains(item) && (item.hasBeenPickedUp == false)) {
                     inventory.add(item); //add it to the bag
                     item.hasBeenPickedUp = true;  // mark the item as picked up!
                     beenFound = true;
