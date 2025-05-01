@@ -33,7 +33,7 @@ a congratulations message will pop up.
 # SPOILER ALERT
 ### Recommended route:
 We highly recommend you go to Chemistry Lab to talk to Hanyu first.
-### Item locations
+### Item locations:
 Newspaper - Campus Center  
 Epipen - Lamont Dining Hall  
 Photo - College Hall  
