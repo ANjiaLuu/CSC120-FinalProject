@@ -34,11 +34,11 @@ a congratulations message will pop up.
 ### Recommended route:
 We highly recommend you go to Chemistry Lab to talk to Hanyu first.
 ### Item locations
-Newspaper - Campus Center
-Epipen - Lamont Dining Hall
-Photo - College Hall
-Cake - Talbot House
-Shakila's Essay - Ceramics Building 
+Newspaper - Campus Center  
+Epipen - Lamont Dining Hall  
+Photo - College Hall  
+Cake - Talbot House  
+Shakila's Essay - Ceramics Building  
 
 
 
