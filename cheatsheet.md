@@ -1,28 +1,28 @@
 # Basic commands
  go(south, north,east,west)  
  talk to(Shakila, Anjia, Savannah, Hanyu)  
- pick up 
- put down
- inspect(building and item)
- exit
- show inventory
-
-(0,0) - The Quad
-(0,1) - Talbot House
-(0,2) - Lamont Dining Hall
-(1,0) - Seelye Basement 
-(1,1) - Campus Center
-(1,2) - College Hall
-(2,0) - Outdoor track
-(2,1) - Chemistry Lab
-(2,2) - Ceramics Building 
-
-Item names: 
-Newspaper
-EpiPen 
-Photo 
-Cake 
-Shakila's Essay
+ pick up  
+ put down  
+ inspect(building and item)  
+ exit  
+ show inventory  
+<br>
+(0,0) - The Quad  
+(0,1) - Talbot House  
+(0,2) - Lamont Dining Hall  
+(1,0) - Seelye Basement  
+(1,1) - Campus Center  
+(1,2) - College Hall  
+(2,0) - Outdoor track  
+(2,1) - Chemistry Lab  
+(2,2) - Ceramics Building  
+<br>
+Item names:  
+Newspaper  
+EpiPen  
+Photo  
+Cake   
+Shakila's Essay  
 
 ## Warning: the names of building, item and non-player characters are case-SENSITIVE.
 
